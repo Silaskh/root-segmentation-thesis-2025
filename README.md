@@ -11,44 +11,43 @@ The project presents a **proof-of-concept deep learning pipeline** for segmentin
 ---
 
 ## Repository Structure
-=================
-
-- Data/                           # Preprocessing notebooks
-  - cropping.ipynb
-  - down_sample.ipynb
-  - preprocessing_rawdata.ipynb
-
-- PostProcessing/                 # Postprocessing and analysis
-  - Full_analysis_prob_cou...
-  - diff_plot_final.py
-  - projection_images.py
-  - .gitignore
-
-- code/                           # Main project code
-  - data/                         # Data handling code
-    - data_loading.py
-    - data_sets.py
-    - utils.py
-    - voxel_count.py
-    - __init__.py
-
-  - post/                         # Postprocessing inference
-    - inference.py
-    - __init__.py
-
-  - training/                     # Training pipeline
-    - config.py
-    - loss.py
-    - losses_custom.py
-    - main.py
-    - model.py
-    - training.py
-    - utils.py
-    - __init__.py
-
-- LICENSE
-- README.md
-- environment.yml                  # Typo corrected!
+```text
+├── Data/                          # Preprocessing notebooks
+│   ├── cropping.ipynb
+│   ├── down_sample.ipynb
+│   └── preprocessing_rawdata.ipynb
+│
+├── PostProcessing/                # Postprocessing and analysis
+│   ├── Full_analysis_prob_cou...
+│   ├── diff_plot_final.py
+│   ├── projection_images.py
+│   └── .gitignore
+│
+├── code/                          # Main project code
+│   ├── data/                      # Data handling code
+│   │   ├── data_loading.py
+│   │   ├── data_sets.py
+│   │   ├── utils.py
+│   │   ├── voxel_count.py
+│   │   └── __init__.py
+│   │
+│   ├── post/                      # Postprocessing inference
+│   │   ├── inference.py
+│   │   └── __init__.py
+│   │
+│   ├── training/                  # Training pipeline
+│   │   ├── config.py
+│   │   ├── loss.py
+│   │   ├── losses_custom.py
+│   │   ├── main.py
+│   │   ├── model.py
+│   │   ├── training.py
+│   │   ├── utils.py
+│   │   └── __init__.py
+│
+├── LICENSE
+├── README.md
+└── environment.yml
 
 ```
 
