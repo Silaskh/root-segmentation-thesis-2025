@@ -11,35 +11,42 @@ The project presents a **proof-of-concept deep learning pipeline** for segmentin
 ---
 
 ## Repository Structure
-
-```
-├── Data/                     # Preprocessing and cropping
-│   ├── Cropping.ipynb        # Jupyter notebook for interactive cropping
-│   ├── down_sample.ipynb     # Jupyter notebook for downsampling volumes
-│   └── preprocess_rawdata.py # Script for preprocessing raw data files
+├── Data/
+│   ├── cropping.ipynb
+│   ├── down_sample.ipynb
+│   └── preprocessing_rawdata.ipynb
 │
-├── PostProcessing/           # Postprocessing and analysis
-│   ├── histogram_analysis.py         # Histogram-based root analysis
-│   ├── projection_heatmap.py         # Projection heatmap generation
-│   └── other scripts/notebooks as needed
+├── PostProcessing/
+│   ├── .gitignore
+│   ├── Full_analysis_prob_cou...
+│   ├── diff_plot_final.py
+│   └── projection_images.py
 │
-├── Training/                 # Training pipeline
-│   ├── code/                 # Modular training code
+├── code/                      # contains modules
+│   ├── data/
+│   │   ├── data_loading.py
+│   │   ├── data_sets.py
+│   │   ├── utils.py
+│   │   ├── voxel_count.py
 │   │   ├── __init__.py
-│   │   ├── main.py           # Main training entry point
-│   │   ├── data_loader.py
-│   │   ├── model.py
-│   │   ├── loss.py
-│   │   ├── trainer.py
-│   │   └── (other modules as needed)
-│   ├── configs/              # YAML configs controlling training
-│   │   ├── example_config.yaml
-│   │   └── (other configs)
-│   └── logs/ (optional)      # Training logs, not included in Git repo
 │
-├── environment.yml           # Conda environment for reproducibility
-├── LICENSE                   # MIT License
-└── README.md                 # Project documentation
+│   ├── post/
+│   │   ├── inference.py
+│   │   ├── __init__.py
+│
+│   ├── training/
+│   │   ├── config.py
+│   │   ├── loss.py
+│   │   ├── losses_custom.py
+│   │   ├── main.py
+│   │   ├── model.py
+│   │   ├── training.py
+│   │   ├── utils.py
+│   │   ├── __init__.py
+│
+├── LICENSE
+├── README.md
+└── enviroment.yml  (note: typo! should be "environment.yml")
 ```
 
 ---
