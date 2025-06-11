@@ -1,6 +1,6 @@
 # Root Segmentation Pipeline - Bachelor Thesis
 
-This repository contains the code accompanying my Bachelor thesis:
+This repository contains the code accompanying the bachelor thesis Segmentation and Characterization of Plant Root System Architecture from Micro-CT Scans:
 
 *"Accurate characterization of plant root system architecture in natural soil environments is essential for advancing plant science but remains technically challenging..."*
 
