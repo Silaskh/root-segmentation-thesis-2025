@@ -83,7 +83,7 @@ Train a 3D UNet model using the modular training pipeline:
 
 ```bash
 cd Training
-python -m code.main --config configs/example_config.yaml
+python -m code.training.main --config configs/example_config.yaml
 ```
 
 Training is controlled via YAML configuration files (`configs/`).
